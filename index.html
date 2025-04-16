@@ -1,8 +1,104 @@
-<section id="gxme-hub" class="gxme-container" style="display: none;">
-  <h2 class="gxme-title">GXME Hub</h2>
-  <div class="gxme-grid">
-    <a href="https://polaris-assets-06w6.onrender.com/gfiles/slope/" target="_blank" class="gxme-card">Slope</a>
-    <a href="https://polaris-assets-06w6.onrender.com/gfiles/1v1lol/" target="_blank" class="gxme-card">1v1.LOL</a>
-    <a href="https://polaris-assets-06w6.onrender.com/gfiles/run3/" target="_blank" class="gxme-card">Run 3</a>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploit Hub</title>
+  <style>
+    /* General Reset and Body Styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111;
+      color: white;
+    }
+
+    /* Menu Button Styling */
+    .menu-btn {
+      background-color: #6a00ff;
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 20px;
+    }
+
+    .menu-btn:hover {
+      background-color: #4d00b3;
+      transform: scale(1.05);
+    }
+
+    /* GXME Hub Styles */
+    #gxme-hub {
+      display: none;
+      padding: 40px 20px;
+      text-align: center;
+      background: linear-gradient(to right, #3f0d67, #6a00ff);
+      color: white;
+      border-radius: 16px;
+      margin: 40px auto;
+      max-width: 1000px;
+      box-shadow: 0 0 30px rgba(106, 0, 255, 0.3);
+    }
+
+    #gxme-hub .gxme-title {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    #gxme-hub .gxme-grid {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    #gxme-hub .gxme-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      padding: 20px;
+      border-radius: 12px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+      backdrop-filter: blur(8px);
+    }
+
+    #gxme-hub .gxme-card:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menu Button to open GXME Hub -->
+  <button class="menu-btn" onclick="openGXMEHub()">Open GXME Hub</button>
+
+  <!-- GXME Hub Section -->
+  <section id="gxme-hub">
+    <h2 class="gxme-title">GXME Hub</h2>
+    <div class="gxme-grid">
+      <a href="https://polaris-assets-06w6.onrender.com/gfiles/slope/" target="_blank" class="gxme-card">Slope</a>
+      <a href="https://polaris-assets-06w6.onrender.com/gfiles/1v1lol/" target="_blank" class="gxme-card">1v1.LOL</a>
+      <a href="https://polaris-assets-06w6.onrender.com/gfiles/run3/" target="_blank" class="gxme-card">Run 3</a>
+    </div>
+  </section>
+
+  <script>
+    // Function to open GXME Hub and hide other content if necessary
+    function openGXMEHub() {
+      document.getElementById('gxme-hub').style.display = 'block';
+      // Optional: Hide other sections, e.g. Kahoot or main menu
+      // document.getElementById('kahoot-frame').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>
